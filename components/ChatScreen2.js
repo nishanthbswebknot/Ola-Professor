@@ -82,24 +82,26 @@ keyboardVerticalOffset={Platform.select({android: 15})} style={{flex:1}}behavior
         <Header style={{backgroundColor:'#fff',height:50,width:'100%'}}>
 
         
-        <View style={{flexDirection:'row'}}>
+        
+        <Left style={{flex:1}}>
         <Button transparent onPress={()=>this.props.navigation.goBack()}>
         
         <Image
       style={{width: 20, height: 20,alignSelf:"center",alignContent:"center",justifyContent:"center"}}
       source={require('../assets/back.png')}/>
-        </Button>
+        </Button></Left>
+        <Body style={{flex:1,flexDirection:'row'}}>
         <Image
       style={{width: 30, height: 30,alignSelf:"center",alignContent:"center",justifyContent:"center"}}
       source={require('../assets/user.png')}/>
-        <Text style={{color:'black',margin:6,alignSelf:"center",alignContent:"center",justifyContent:"center",fontWeight:'bold',fontSize:20}}>Alexandre   </Text></View>
+        <Text style={{color:'black',margin:6,alignSelf:"center",alignContent:"center",justifyContent:"center",fontWeight:'bold',fontSize:18}}>Alexandre   </Text></Body>
       
       
-        <Right></Right>
+        <Right style={{flex:1}}>
         <Button transparent>
         <Image
       style={{width: 20, height: 20}}
-      source={require('../assets/gear.png')}/></Button>
+      source={require('../assets/gear.png')}/></Button></Right>
         
         
       
